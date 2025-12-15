@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashley Jieun Lee</title>
-    <meta name="description" content="Personal website and portfolio of Ashley Jieun Lee">
+    <meta name="description" content="Portfolio of Ashley Jieun Lee">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container">
         <!-- Hero Section -->
@@ -18,34 +20,49 @@
                     <img src="assets/profile.png" alt="Ashley Jieun Lee" id="profile-img">
                 </div>
                 <h1 class="name">Ashley Jieun Lee</h1>
-                <p class="tagline">Software Developer & Creative Problem Solver</p>
+                <p class="tagline">
+                    Machine Learning Research Engineer at
+                    <a href="https://marveri.com" target="_blank"
+                        style="color: inherit; text-decoration: underline; position: relative; z-index: 10;">Marveri</a>
+                </p>
                 <div class="social-links">
-                    <a href="#" class="social-link" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="#" class="social-link" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/ashley-jieun-lee/" class="social-link" aria-label="LinkedIn"
+                        target="_blank">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="#" class="social-link" aria-label="Email">
+                    <a href="https://github.com/ajlee19" class="social-link" aria-label="GitHub" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=wKy53gIAAAAJ"
+                        class="social-link" aria-label="Google Scholar" target="_blank">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                    <a href="mailto:jlee19@alum.mit.edu" class="social-link" aria-label="Email">
                         <i class="fas fa-envelope"></i>
                     </a>
-                    <a href="#" class="social-link" aria-label="Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
+                </div>
+
+                <div style="max-width: 600px; margin: 3rem auto 0; text-align: center;">
+                    <h3 style="margin-bottom: 0.25rem; font-size: 1.8rem; font-weight: 700; color: white;">About Me</h3>
+                    <div class="hero-divider"></div>
+                    <p style="line-height: 1.6; color: rgba(255, 255, 255, 0.95); font-size: 1.1rem;">
+                        I love creating elegant solutions to complex problems. <br>
+                        Currently, I am focused on building robust architectures that bridge the gap between theoretical
+                        AI and production reality.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <!-- Navigation -->
         <nav class="nav">
-            <a href="#about" class="nav-link active">About</a>
-            <a href="#experience" class="nav-link">Experience</a>
+            <!-- <a href="#about" class="nav-link active">About</a> -->
+            <a href="#bio" class="nav-link">Bio</a>
             <a href="#projects" class="nav-link">Projects</a>
             <a href="#contact" class="nav-link">Contact</a>
         </nav>
 
         <!-- About Section -->
-        <section id="about" class="section">
+        <!-- <section id="about" class="section">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <p>
@@ -71,10 +88,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- Experience Section -->
-        <section id="experience" class="section">
+        <!-- <section id="experience" class="section">
             <h2 class="section-title">Experience</h2>
             <div class="timeline">
                 <div class="timeline-item">
@@ -94,10 +111,164 @@
                     </div>
                 </div>
             </div>
+        </section> -->
+
+        <!-- Bio Section -->
+        <section id="bio" class="section">
+            <h2 class="section-title">Bio</h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Machine Learning Research Engineer</h3>
+                        <h4>Marveri</h4>
+                        <p>Cambridge, MA</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2020 - 2023</div>
+                    <div class="timeline-content">
+                        <h3>Software Engineer (Intune)</h3>
+                        <h4>Microsoft</h4>
+                        <p>Cambridge, MA</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2019</div>
+                    <div class="timeline-content">
+                        <h3>B.S. in Computer Science and Engineering</h3>
+                        <h4>Massachusetts Institute of Technology (MIT)</h4>
+                        <p>Cambridge, MA</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Details</div>
+                    <div class="timeline-content">
+                        <p style="font-style: italic; color: #666;">
+                            For detailed work history, please refer to my
+                            <a href="https://www.linkedin.com/in/ashley-jieun-lee/" target="_blank"
+                                style="text-decoration: underline;">LinkedIn profile</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Projects Section -->
         <section id="projects" class="section">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <!-- <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Project One</h3>
+                    <p>A brief description of your amazing project and the technologies used to build it.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
+                    </div>
+                </div> -->
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>LUI: Multimodal Intelligent Interface</h3>
+                    <p>
+                        Engineered a sensor-fusion pipeline synchronizing high-velocity vision streams with asynchronous
+                        NLP vectors to resolve deictic ambiguity in high-latency environments.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/LargeUserInterface" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="https://www.media.mit.edu/projects/large-user-interface-with-gesture-and-voice-feedback/overview/"
+                            class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> MIT Media Lab
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-hand-paper"></i>
+                    </div>
+                    <h3>Gesture Keyboard</h3>
+                    <p>
+                        CNN-based gesture keyboard using spatial text interpretation for robust character
+                        classification.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/ajlee19/GestureKeyboard" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="research-interests">
+                <h3>Research Interests</h3>
+                <div class="interest-list">
+                    <div class="interest-item">
+                        <p>NLP</p>
+                        <!-- <i class="fas fa-brain"></i> NLP -->
+                    </div>
+                    <div class="interest-item">
+                        <p>Neuro-symbolic AI</p>
+                        <!-- <i class="fas fa-check-double"></i> Neuro-symbolic AI -->
+                    </div>
+                    <!-- <div class="interest-item">
+                        <i class="fas fa-network-wired"></i> Distributed Systems
+                    </div>
+                    <div class="interest-item">
+                        <i class="fas fa-robot"></i> Agentic Workflows
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="skills" style="margin-top: 5rem; max-width: 900px; margin-left: auto; margin-right: auto;">
+                <h3 class="skills-header">Skills</h3>
+
+                <div class="skills-category">
+                    <h4>Languages</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript & TypeScript</span>
+                        <span class="skill-tag">Java & Kotlin</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+
+                <div class="skills-category" style="margin-top: 1.5rem;">
+                    <h4>ML Frameworks</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Huggingface</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                    </div>
+                </div>
+
+                <div class="skills-category" style="margin-top: 1.5rem;">
+                    <h4>MLOps & Infrastructure</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="projects" class="section">
             <h2 class="section-title">Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
@@ -146,14 +317,14 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- Contact Section -->
         <section id="contact" class="section">
             <h2 class="section-title">Get In Touch</h2>
             <div class="contact-content">
                 <p>I'm always interested in hearing about new opportunities and interesting projects. Let's connect!</p>
-                <a href="mailto:your.email@example.com" class="cta-button">
+                <a href="mailto:jlee19@alum.mit.edu" class="cta-button">
                     <i class="fas fa-envelope"></i>
                     Say Hello
                 </a>
@@ -162,10 +333,11 @@
 
         <!-- Footer -->
         <footer class="footer">
-            <p>&copy; 2024 Ashley Jieun Lee. Built with ❤️ and lots of coffee.</p>
+            <p>&copy; 2024 Ashley Jieun Lee</p>
         </footer>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
