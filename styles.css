@@ -288,7 +288,7 @@ body {
 }
 
 .company-link {
-    color: inherit;
+    color: #667eea;
     text-decoration: none;
     transition: all 0.3s ease;
     display: inline-block;
