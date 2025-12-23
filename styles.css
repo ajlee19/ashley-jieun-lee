@@ -287,28 +287,52 @@ body {
     line-height: 1.6;
 }
 
+.company-link {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.company-link:hover {
+    color: #5a67d8;
+    /* Slightly darker/different shade */
+    transform: translateX(4px);
+    /* Slide slightly right */
+    text-shadow: 0 2px 5px rgba(102, 126, 234, 0.3);
+}
+
 /* Projects Section */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem; /* Increased gap between cards */
-    margin-top: 2.5rem; /* More space between title and cards */
-    padding: 0 0.5rem; /* Slight side buffer */
+    gap: 2rem;
+    /* Increased gap between cards */
+    margin-top: 2.5rem;
+    /* More space between title and cards */
+    padding: 0 0.5rem;
+    /* Slight side buffer */
 }
 
 .project-card {
     background: #f8f9fa;
-    padding: 2rem 2rem; /* Generous internal spacing (Top/Bottom: 3rem, Left/Right: 2rem) */
+    padding: 2rem 2rem;
+    /* Generous internal spacing (Top/Bottom: 3rem, Left/Right: 2rem) */
     border-radius: 1rem;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #f0f0f0; /* Very subtle border */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02); /* Very subtle shadow for depth */
-    display: flex; /* Ensures content distributes evenly */
+    border: 1px solid #f0f0f0;
+    /* Very subtle border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    /* Very subtle shadow for depth */
+    display: flex;
+    /* Ensures content distributes evenly */
     flex-direction: column;
     justify-content: space-between;
-    height: 100%; /* Makes all cards in a row the same height */
+    height: 100%;
+    /* Makes all cards in a row the same height */
 }
+
 /* .project-card {
     background: #f8f9fa;
     padding: 2rem;
@@ -324,7 +348,8 @@ body {
 }
 
 .project-icon {
-    font-size: 3.5rem; /* Slightly larger icons */
+    font-size: 3.5rem;
+    /* Slightly larger icons */
     color: #667eea;
     margin-bottom: 1.5rem;
 }
@@ -335,13 +360,16 @@ body {
     color: #333;
     font-weight: 700;
 }
+
 .project-card p {
     color: #666;
     line-height: 1.7;
     margin-bottom: 2rem;
     font-size: 1rem;
-    flex-grow: 1; /* Pushes buttons to the bottom */
+    flex-grow: 1;
+    /* Pushes buttons to the bottom */
 }
+
 /* .project-card p {
     color: #666;
     line-height: 1.6;
@@ -427,7 +455,8 @@ body {
 
 .skills-category {
     text-align: left;
-    margin-bottom: 2.5rem; /* Spacing between categories */
+    margin-bottom: 2.5rem;
+    /* Spacing between categories */
 }
 
 .skills-category:last-child {
@@ -490,6 +519,7 @@ body {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -505,11 +535,11 @@ body {
     .name {
         font-size: 2.5rem;
     }
-    
+
     .tagline {
         font-size: 1.2rem;
     }
-    
+
     .nav {
         position: fixed;
         bottom: 1rem;
@@ -523,25 +553,25 @@ body {
         border-radius: 25px;
         backdrop-filter: blur(10px);
     }
-    
+
     .nav-link {
         padding: 0.5rem 1rem;
         font-size: 0.8rem;
     }
-    
+
     .timeline::before {
         left: 20px;
     }
-    
+
     .timeline-item {
         flex-direction: column;
         padding-left: 3rem;
     }
-    
+
     .timeline-item:nth-child(even) {
         flex-direction: column;
     }
-    
+
     .timeline-date {
         position: absolute;
         left: -3rem;
@@ -552,15 +582,15 @@ body {
         height: 6rem;
         font-size: 0.8rem;
     }
-    
+
     .projects-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .social-links {
         gap: 1rem;
     }
-    
+
     .social-link {
         width: 40px;
         height: 40px;
@@ -571,25 +601,25 @@ body {
     .container {
         padding: 0 15px;
     }
-    
+
     .section {
         margin-top: 1rem;
         border-radius: 1rem;
         padding: 3rem 0;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
-    
+
     .about-content p {
         font-size: 1.1rem;
     }
-    
+
     .skill-tags {
         gap: 0.5rem;
     }
-    
+
     .skill-tag {
         padding: 0.5rem 1rem;
         font-size: 0.9rem;
