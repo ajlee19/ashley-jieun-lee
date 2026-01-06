@@ -3,6 +3,24 @@ document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('.nav-link');
     const sections = document.querySelectorAll('.section');
 
+    // Mobile Menu Toggle Logic
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const nav = document.querySelector('.nav');
+    const icon = document.querySelector('.mobile-menu-btn i');
+
+    if (menuBtn) {
+        menuBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            if (nav.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+    }
+
     // Update active navigation link based on scroll position
     function updateActiveNav() {
         const scrollPos = window.scrollY + 100;
@@ -31,6 +49,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 targetSection.scrollIntoView({
                     behavior: 'smooth'
                 });
+
+                // Auto-close mobile menu if open
+                if (window.innerWidth <= 768) {
+                    nav.classList.remove('active');
+                    if (icon) {
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                }
             }
         });
     });
